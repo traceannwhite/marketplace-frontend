@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Resonance & Wonder Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## E-Commerce Mini-Marketplace Project
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Resonance & Wonder will be a business to consumer marketplace wbsite for approved businesses to sell approved products to consumers. While the website will resemble larger marketplaces like Etsy, companies and producst must meet certain criteria from the owner in order to list their products on the website. The website will have a sign up/login feature for customers and for businesses. It will include full CRUD funcionality for businesses to add and delete products from their account and allow consumers to add the products added by businesses to their cart for purchase. Available payment menthods initially will be limited to paypal and more options will be added as the product grows.
 
-### `npm start`
+### Project Links
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Back end git](https://github.com/traceannwhite/RR-marketplace-backend.git)
+- [Heroku Deployment](TBD)
+- [Front end git](https://github.com/traceannwhite/RR-marketplace-frontend.git)
+- [Vercel Deployment](https://rr-marketplace-frontend.vercel.app/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Wireframes and Architecture
 
-### `npm test`
+- Wireframes: -[General Design](https://res.cloudinary.com/dhcagrzcb/image/upload/v1631302148/IMG_2378_2_u1f9th.heic)
+- React Architecture: -[Google Drawing](https://docs.google.com/drawings/d/1xPGib09_kNm2uAtcwClSCeXAeG2lrQzk3VvaV7cN0Ck/edit?usp=sharing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Time/Priority Matrix
 
-### `npm run build`
+| Component                        | Priority | Estimated Time | Time Invested |
+| -------------------------------- | :------: | :------------: | :-----------: |
+| Build Repositories               |    H     |     15mins     |    .25hrs     |
+| Add dependencies, folders, files |    H     |     15mins     |    .25hrs     |
+| Set up Heroku / Deploy           |    H     |     15mins     |      hrs      |
+| Connecting Server                |    H     |      1hrs      |      hrs      |
+| Routes                           |    H     |      2hrs      |      hrs      |
+| Controllers                      |    H     |      2hrs      |      hrs      |
+| Seed Data                        |    H     |      2hrs      |      hrs      |
+| Install and set up react router  |    H     |     15mins     |      hrs      |
+| Set up pages                     |    H     |      3hrs      |     3hrs      |
+| Authorization                    |    H     |      4hrs      |      hrs      |
+| Switch, Links, Routes            |    H     |      2hrs      |      hrs      |
+| Header (Menu Button & Login)     |    H     |      3hrs      |      hrs      |
+| Search bar                       |    H     |      2hrs      |      hrs      |
+| Full CRUD for companies display  |    H     |      3hrs      |      hrs      |
+| Home Display                     |    H     |      3hrs      |      hrs      |
+| Products Display                 |    H     |      3hrs      |      hrs      |
+| Signup/Login form                |    H     |      3hrs      |      hrs      |
+| Making everything communicate    |    H     |      2hrs      |      hrs      |
+| Debugging                        |    H     |      5hrs      |      hrs      |
+| Responsiveness                   |    M     |      3hrs      |      hrs      |
+| Home Page Styling                |    M     |      3hrs      |      hrs      |
+| Individual Products Page Styling |    M     |      3hrs      |      hrs      |
+| All Products Page Styling        |    M     |      3hrs      |      hrs      |
+| User Page Styling                |    M     |      3hrs      |      hrs      |
+| Learning New Tech                |    M     |     10hrs      |     10hrs     |
+| Total                            |    H     |     65hrs      |      hrs      |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Component                   | Priority | Estimated Time | Time Invested |
+| --------------------------- | :------: | :------------: | :-----------: |
+| Randomize featured products |    H     |      3hrs      |      hrs      |
+| Add Paypal                  |    H     |      3hrs      |      hrs      |
+| Cart adds up total          |    H     |      3hrs      |      hrs      |
+| Stripe or Square Payment    |    H     |     10hrs      |      hrs      |
+| Favorites List              |    H     |      3hrs      |      hrs      |
+| Booking component           |    H     |      2hrs      |      hrs      |
+| Page for completed purchase |    H     |      2hrs      |      hrs      |
+| Category Products Pages     |    H     |      3hrs      |      hrs      |
+| Category Pages Styling      |    H     |      3hrs      |      hrs      |
+| Total                       |    H     |     25hrs      |      hrs      |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## MVP/Post-MVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### MVP
 
-### `npm run eject`
+BACKEND
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Build Repositories
+- Add dependencies
+- Create standard components files and folders: server.js, controllers, models, db
+- Set up Heroku
+- Create files for MVP databases and schema: CompanyUser, CustomerUser, Products
+- Connect server
+- Set up routes in server
+- Build controllers / set up routes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Create react.js and next.js app
+- Install and set up “react router” in index and app
+- Switch Routes in App
+- Header
+  - Nav Bar
+    - Links
+    - Search bar (if unavailable: no package available)
+  - Sign-up/Login + User Profile Button (Icon)
+  - Cart Button
+- Footer
+  - Links
+  - Copyright
+- Home Page
+  - Hero / Tagline
+  - Featured Products
+- All Products Page
+  - Product Cards (pulled from products created by company users)
+    -Image
+    -Product Name
+    -Add to Cart Button
+- Expanded Products Page
+  - Individual product card info deatils
+  - Non-functioning Book Now button
+- Form Sign-up/Login page
+  - Form for login (username & password) + forgot password
+  - Authorization
+- User Profile: Sellers account page/Customers account page
+- Cart Page
+- Styling each page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Post-MVP
 
-## Learn More
+- User Profile Additional Functionality
+  - Favorites List
+- Purchase Items page (Buy Now)
+  - Cart adds up items
+  - Paypal, Square, Stripe... payment
+- Purchase Successful Page
+- Category Projects pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Components - Descriptions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Detailed in MVP/Post-MVP
 
-### Code Splitting
+## Additional Libraries
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- HTML
+- CSS
+- React, react-router-dom
+- Reactstrap
+- Node
+- Express
+- FaunaDB
