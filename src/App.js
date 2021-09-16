@@ -5,10 +5,10 @@ import Home from "./pages/Home";
 import AllProducts from "./pages/AllProducts";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  const url = "https://https://backend-marketplace-tw.herokuapp.com/";
-
+  // const url = "https://https://backend-marketplace-tw.herokuapp.com/";
   // call API details from Heroku
 
   return (
@@ -27,9 +27,13 @@ function App() {
             path="/products/:id"
             render={(routerProps) => <SingleProduct {...routerProps} />}
           />
-          <Route path="/cart" component={Cart} />
+          <Route
+            path="/cart"
+            render={(routerProps) => <Cart {...routerProps} />}
+          />
         </Switch>
       </main>
+      <Footer />
     </div>
   );
 }

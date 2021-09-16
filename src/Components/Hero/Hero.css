@@ -1,0 +1,16 @@
+/* hero */
+.hero-container {
+  display: flex;
+}
+
+.hero-image,
+.headline {
+  width: 50%;
+  border-radius: 1em;
+}
+
+.headline {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
