@@ -7,6 +7,10 @@ import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 
 function App() {
+  const url = "https://https://backend-marketplace-tw.herokuapp.com/";
+
+  // call API details from Heroku
+
   return (
     <div className="App">
       <Header />
